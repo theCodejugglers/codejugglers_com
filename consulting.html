@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<meta charset="utf-8">
-		<title>Codejugglers</title> <!-- page.title -->
+		<title>Consulting</title> <!-- page.title -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		<meta name="author" content="">
@@ -17,6 +17,9 @@
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
 			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
 			crossorigin="anonymous">
+		<!-- <link rel="stylesheet"
+			href="https://rawcdn.githack.com/hgwr/bootstrap4-solarized-theme/391355d9b5ee94d9be4ed72bcfc85caa4c7d0bd1/dist/css/solarized-light-theme.css"
+			crossorigin="anonymous"> -->
 		<link href="resources/css/commons.css" rel="stylesheet">
 
 		<style type="text/css">
@@ -25,6 +28,34 @@
 				padding-bottom: 40px;
 			} */
 			[lang="de"] {
+				display: none;
+			}
+			/* .container {
+				padding-top: 30px;
+			} */
+
+			.table {
+				display:table;
+			}
+			.header {
+				display:table-header-group;
+				font-weight:bold;
+			}
+			.trow {
+				display:table-row-group;
+			}
+			.trow {
+				display:table-row;
+			}
+			.key {
+				font-weight: bold;
+				padding-top: 1em;
+			}
+			.key, .val {
+				display:table-cell;
+				width:25%;
+			}
+			.trow:before, .trow:after {
 				display: none;
 			}
 		</style>
@@ -97,63 +128,91 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="pb-2 mt-4 mb-2 border-bottom"> <!-- page-header -->
-			<h1>Codejugglers</h1>
+			<h1>Codejugglers Consulting</h1>
 		</div>
 	</div>
 </div>
-
-<div class="row jumbotron">
-	<div class="col-lg-12">
-		<div lang="en">
-			<h2 class="display-4">Welcome to codejugglers.com</h2>
-			<p class="lead">We keep the balance between <em>business requirements</em>, <em>creative ideas</em>, and your <em>mobile desires</em>.</p>
-		</div>
-		<div lang="de">
-			<h2 class="display-4">Willkommen auf codejugglers.de</h2>
-			<p class="lead">Wir balancieren <em>Geschäftsanforderungen</em>, <em>kreative Ideen</em>, und <em>Wünsche nach Mobilität</em>.</p>
-		</div>
-	</div>
-</div>
-
 
 <div class="row">
 	<div class="col-lg-12">
-
-		<div class="row row-eq-height">
-			<span class="col-lg-6 mb-3">
-				<!-- py-3 = padding top/bottom -->
-				<div class="img-thumbnail py-3">
-					<div class="center">
-						<h4 class="text-center"><a href="consulting">Consulting</a></h4>
-					</div>
-				</div>
-			</span>
-
-			<span class="col-lg-6 mb-3">
-				<div class="img-thumbnail py-3">
-					<div class="center">
-						<h4 class="text-center"><a href="apps">Apps</a></h4>
-					</div>
-				</div>
-			</span>
+		<div><h2>Leistungen</h2></div>
+		<div>
+			<p>
+				Angebotene Leistungen umfassen u.a.
+				<ul>
+					<li>Beratung bei Software-Projekten,
+					Begutachtung von Systemen zur Informationsverarbeitung, sowie</li>
+					<li>Prüfung und Konzipierung von Software-Infrastrukturen,
+					insbesondere Software-Architekturen und Service-Architekturen und</li>
+					<li>Absicherung von Systemen und
+					Ermittlung von potentiellen Sicherheitsproblemen in Software-Systemen.</li>
+				</ul>
+			</p>
+			<p>
+				Typische Entwicklungsszenarien sind dabei Datenbank-Anwendungen und
+				komplexe Web-Anwendungen in Cloud-Umgebungen.
+				Dabei wird ein weites Feld von modernen und klassischen Technologien abgedeckt.
+			</p>
 		</div>
 	</div>
 </div>
 
-<hr />
 <div class="row">
-	<div class="col-lg-6">
-		<h3 lang="en">We juggle your projects!</h3>
-		<h3 lang="de">Wir jonglieren Projekte!</h3>
-	</div>
-	<div class="col-lg-6">
-		<h5 lang="en">Follow us:</h4>
-		<h5 lang="de">Folgen:</h4>
-
-			<a href="https://twitter.com/theCodejugglers" class="twitter-follow-button" data-show-count="false">Follow @theCodejugglers</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	<div class="col-lg-12">
+		<div><h2>Technologien</h2></div>
+		<div class="table">
+			<!-- <div class="header">
+				<span class="cell">header1</span>
+				<span class="cell">header2</span>
+			</div> -->
+			<!-- <div class="rowGroup">
+				<div class="row"><span class="cell"></span></div>
+			</div> -->
+			<div class="trow">
+				<span class="key">Bevorzugte allgemeine Programmiersprachen</span>
+				<span class="val">Java, Kotlin, Scala</span>
+			</div>
+			<div class="trow">
+				<span class="key">Backend-Frameworks</span>
+				<span class="val">Micronaut, Rapidoid, Spring</span>
+			</div>
+			<div class="trow">
+				<span class="key">Web-Entwicklung</span>
+				<span class="val">Javascript, Typescript, NodeJS, Deno</span>
+			</div>
+			<div class="trow">
+				<span class="key">Front-End Frameworks</span>
+				<span class="val">Vue, React, Redux</span>
+			</div>
+			<div class="trow">
+				<span class="key">Relationale Datenbanken</span>
+				<span class="val">PostgreSQL, MySQL, MariaDB</span>
+			</div>
+			<div class="trow">
+				<span class="key">App-Entwicklung</span>
+				<span class="val">Android Java/Kotlin</span>
+			</div>
+			<div class="trow">
+				<span class="key">Native Anwendungsentwicklung</span>
+				<span class="val">Rust, Go, C/C++, C#</span>
+			</div>
+			<div class="trow">
+				<span class="key">Scripting</span>
+				<span class="val">Python, Bash, Groovy, Ruby</span>
+			</div>
+			<div class="trow">
+				<span class="key">Build-Systeme</span>
+				<span class="val">Make, CMake, Maven, Gradle, Webpack</span>
+			</div>
+			<div class="trow">
+				<span class="key">Container/Virtualisierung</span>
+				<span class="val">Docker, LXC/LXD, KVM</span>
+			</div>
+		</div>
 	</div>
 </div>
+
+<h3><a href="contact">Kontakt</a></h3>
 
 			<hr>
 			<footer>
@@ -164,16 +223,13 @@
 					</a></small>
 				</div>
 			</footer>
-		</div>
+		</div> <!-- container -->
 
-		<script>
-			document.getElementById("year").textContent = "-" + new Date().getFullYear();
-		</script>
 		<!-- Javascript -->
-		<!-- <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
-		<script src="webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script>
-		<script src="resources/js/bootstrap-popover.js"></script>
-		<script src="resources/js/jquery.dateFormat-1.0.js"></script> -->
+		<!-- <script src="webjars/jquery/1.9.1/jquery.min.js"></script> -->
+		<!-- <script src="webjars/bootstrap/2.3.2/js/bootstrap.min.js"></script> -->
+		<!-- <script src="resources/js/bootstrap-popover.js"></script> -->
+		<!-- <script src="resources/js/jquery.dateFormat-1.0.js"></script> -->
 		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
@@ -181,7 +237,13 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 		<script	src="resources/js/other/utils.js"></script>
-		<script src="resources/js/index/index.js"></script>
+		<!-- <script src="resources/js/index/index.js"></script> -->
 		<script src="resources/js/lang.js"></script>
+		<script>
+			document.getElementById("year").textContent = "-" + new Date().getFullYear();
+			$(document).ready(function() {
+				$("#consultingNavbar").addClass("active");
+			});
+		</script>
 	</body>
 </html>
